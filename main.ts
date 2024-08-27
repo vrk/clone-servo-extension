@@ -3,7 +3,7 @@
  */
 //% color="#03AA74" weight=88 icon="\uf021" blockGap=8
 //% groups='["Positional", "Continuous", "Configuration"]'
-namespace servos {
+namespace myServos {
     //% fixedInstances
     export class Servo {
         private _minAngle: number;
@@ -201,11 +201,11 @@ namespace servos {
 }
 
 
-namespace servos {
+namespace myServos {
     //% block="servo P0" fixedInstance whenUsed
-    export const P0 = new servos.PinServo(pins.P0);
+    export const P0 = new myServos.PinServo(pins.P0);
     //% block="servo P1" fixedInstance whenUsed
-    export const P1 = new servos.PinServo(pins.P1);
+    export const P1 = new myServos.PinServo(pins.P1);
     //% block="servo P2" fixedInstance whenUsed
-    export const P2 = new servos.PinServo(pins.P2);
+    export const P2 = new myServos.PinServo(pins.P2);
 }
